@@ -3,6 +3,12 @@ name = "fun"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+# Unity Editor and funcli
+crate-type = ["rlib", "cdylib"]
+# macOS and Android
+# crate-type = ["cdylib"]
+# iOS and WebGL
+# crate-type = ["staticlib"]
 
 [dependencies]
